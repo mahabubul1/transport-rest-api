@@ -11,9 +11,9 @@
  composer update or composer install 
 ```
 
-###### ..env file create 
+### ..env file create 
 
-## database connection
+### database connection
 
 ### key generate
 ```
@@ -25,7 +25,7 @@
 php artisan jwt:secret
 ```
 
-## import postman-collection 
+### import postman-collection 
 
  ```
    you can see postman collection in postman-collection folder and also dumy sql file 
