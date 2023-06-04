@@ -1,10 +1,10 @@
 {
 	"info": {
-		"_postman_id": "f221d727-c1b5-4235-9fbe-fc308fca708f",
+		"_postman_id": "51b0af2f-66f7-4338-987e-4529d334c6f7",
 		"name": "transport-application",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
 		"_exporter_id": "8052702",
-		"_collection_link": "https://crimson-robot-374715.postman.co/workspace/Mahabbul-Alam~04dfc337-d3c9-46ba-9933-cf81da085206/collection/8052702-f221d727-c1b5-4235-9fbe-fc308fca708f?action=share&creator=8052702&source=collection_link"
+		"_collection_link": "https://crimson-robot-374715.postman.co/workspace/Mahabbul-Alam~04dfc337-d3c9-46ba-9933-cf81da085206/collection/8052702-51b0af2f-66f7-4338-987e-4529d334c6f7?action=share&creator=8052702&source=collection_link"
 	},
 	"item": [
 		{
@@ -13,6 +13,16 @@
 				{
 					"name": "auth/login",
 					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vMTI3LjAuMC4xOjgwMDAvYXBpL3YxL2F1dGgvbG9naW4iLCJpYXQiOjE2ODU5MDM0NzIsImV4cCI6MTY4NTkwNzA3MiwibmJmIjoxNjg1OTAzNDcyLCJqdGkiOiJpV0pzeWRnRDRRbEpaSEVoIiwic3ViIjoiNSIsInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjcifQ.XXqVVurcF9tv1pI9suaDBeJRT4qMENRk2sBjMyxebgU",
+									"type": "string"
+								}
+							]
+						},
 						"method": "POST",
 						"header": [],
 						"body": {
@@ -20,7 +30,7 @@
 							"formdata": [
 								{
 									"key": "email",
-									"value": "mahab@gmail.com",
+									"value": "alam@gmail.com",
 									"type": "text"
 								},
 								{
@@ -60,17 +70,22 @@
 							"formdata": [
 								{
 									"key": "name",
-									"value": "",
+									"value": "Alam",
 									"type": "text"
 								},
 								{
 									"key": "email",
-									"value": "",
+									"value": "alam@gmail.com",
 									"type": "text"
 								},
 								{
 									"key": "password",
-									"value": "",
+									"value": "123456789",
+									"type": "text"
+								},
+								{
+									"key": "password_confirmation",
+									"value": "123456789",
 									"type": "text"
 								}
 							]
@@ -98,6 +113,16 @@
 				{
 					"name": "auth/logout",
 					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vMTI3LjAuMC4xOjgwMDAvYXBpL3YxL2F1dGgvbG9naW4iLCJpYXQiOjE2ODU5MDcwNjAsImV4cCI6MTY4NTkxMDY2MCwibmJmIjoxNjg1OTA3MDYwLCJqdGkiOiJNZnAyYjkwblNhNTJSVkZ6Iiwic3ViIjoiMSIsInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjcifQ.IYw2PLsTMTUk3DtCVyCf1Md2BEMBrGdbWdQuYxSSfj0",
+									"type": "string"
+								}
+							]
+						},
 						"method": "POST",
 						"header": [],
 						"url": {
@@ -123,6 +148,16 @@
 				{
 					"name": "auth/refresh",
 					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vMTI3LjAuMC4xOjgwMDAvYXBpL3YxL2F1dGgvbG9naW4iLCJpYXQiOjE2ODU5MDcxNzMsImV4cCI6MTY4NTkxMDc3MywibmJmIjoxNjg1OTA3MTczLCJqdGkiOiJ0enV6WHZvSDZrcmc1YVBDIiwic3ViIjoiMSIsInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjcifQ.sZ12ksKubc1vKDi4ccphgV9kKsYaRXmzKyPe_o8bubE",
+									"type": "string"
+								}
+							]
+						},
 						"method": "POST",
 						"header": [],
 						"url": {
@@ -153,6 +188,16 @@
 				{
 					"name": "type",
 					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vMTI3LjAuMC4xOjgwMDAvYXBpL3YxL2F1dGgvcmVmcmVzaCIsImlhdCI6MTY4NTkwNzE3MywiZXhwIjoxNjg1OTEwNzk4LCJuYmYiOjE2ODU5MDcxOTgsImp0aSI6IlVhdDFBUkFnQk1IemsxaWwiLCJzdWIiOiIxIiwicHJ2IjoiMjNiZDVjODk0OWY2MDBhZGIzOWU3MDFjNDAwODcyZGI3YTU5NzZmNyJ9.uLvaXwVL3_RBsR5ZDpE_doW1PAZpiOg-3nYYqPNFkms",
+									"type": "string"
+								}
+							]
+						},
 						"method": "GET",
 						"header": [],
 						"url": {

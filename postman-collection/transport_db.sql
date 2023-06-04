@@ -124,16 +124,13 @@ CREATE TABLE IF NOT EXISTS `users` (
   `updated_at` timestamp NULL DEFAULT NULL,
   PRIMARY KEY (`id`),
   UNIQUE KEY `users_email_unique` (`email`)
-) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 -- Dumping data for table db_transport.users: ~4 rows (approximately)
 /*!40000 ALTER TABLE `users` DISABLE KEYS */;
 INSERT INTO `users` (`id`, `name`, `email`, `email_verified_at`, `password`, `remember_token`, `created_at`, `updated_at`) VALUES
-	(1, 'mahabub', 'mahabubul1@gmail.com', NULL, '$2y$10$Fp74EUis8ZQUAPR9kGkvKObO0unDENY6qCRfKGlLhkHl1GSkNzPkG', NULL, '2023-06-03 18:09:36', '2023-06-03 18:09:36'),
-	(2, 'mahabub', 'mahabubul@gmail.com', NULL, '$2y$10$1ayHM.xI49qkKQd0g/iBNOR0FZVhza63t4NW0TRvm2vpHJzyrIqlG', NULL, '2023-06-03 18:11:08', '2023-06-03 18:11:08'),
-	(3, 'mahabub', 'mahabubu@gmail.com', NULL, '$2y$10$ZdWyGsVHvM2exgr215DtGO6kUgcL/3N.wPloxjibOzYUE8Vzrf9AW', NULL, '2023-06-03 18:11:48', '2023-06-03 18:11:48'),
-	(4, 'mahabub', 'mahabu@gmail.com', NULL, '$2y$10$.8IKpS1sWzPELKLtXKh9Fu24yjJO7LRE8DjU2rGM.X5Mn6R.N2Qgu', NULL, '2023-06-03 18:13:29', '2023-06-03 18:13:29'),
-	(5, 'mahabub', 'mahab@gmail.com', NULL, '$2y$10$rZlI7AdEKEhEIXMO1qRrueWmv0yf9vNYFfblThUQSlpF2LVlVPXWu', NULL, '2023-06-03 18:28:07', '2023-06-03 18:28:07');
+	(1, 'Alam', 'alam@gmail.com', NULL, '$2y$10$g6WlpmeE8NCOoCo2U5SibeCW3eiQqIlk1gxy.Q3BTj23niaDgTzxG', NULL, '2023-06-04 19:30:40', '2023-06-04 19:30:40'),
+	(2, 'Alam', 'mahabub@gmail.com', NULL, '$2y$10$tiKhzW4GKNg39hnC1zcKOuEiai3.yMi9b7kLA.BUFyy/ryP3zDvXC', NULL, '2023-06-04 19:31:22', '2023-06-04 19:31:22');
 /*!40000 ALTER TABLE `users` ENABLE KEYS */;
 
 -- Dumping structure for table db_transport.vehicles
